@@ -1,7 +1,50 @@
 @use '../../style' as s;
 
-main {
-	background: s.color(dark);
-	color: s.color(light);
-	padding: s.space(4);
-} 
+.form {
+  display: grid;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.img {
+  width: 100%;
+}
+
+.h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.field {
+  display: grid;
+  gap: 4px;
+}
+
+.input {
+  border-radius: 4px;
+  border: 1px solid gray;
+  padding: 4px;
+  width: 100%;
+}
+
+.field-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: blue;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.change-age,
+.copy-button {
+  border-radius: 20px;
+  border: 1px solid #222;
+  padding: 6px;
+  width: fit-content;
+  cursor: pointer;
+}
